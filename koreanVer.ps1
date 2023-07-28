@@ -4,6 +4,10 @@ $label.AutoSize = $true
 $form = New-Object System.Windows.Forms.Form
 $form.Controls.Add($label)
 $form.TopMost = $true
+if ($timer -ne $null) { #기존에 timer가 남아 있으면 삭제
+    $timer.Stop()
+    $timer.Dispose()
+}
 $timer = New-Object System.Windows.Forms.Timer
 $timer.Interval = 5000 # 5초마다 창을 닫음
 $timer.Add_Tick({
