@@ -5,7 +5,6 @@ This project is auto shutdown PC when Printer spooler pool are empty. That means
 
 This program only works on default printer. Please check and edit your [default printer](https://support.microsoft.com/en-us/windows/set-a-default-printer-in-windows-e10cf8b8-e596-b102-bf84-c41022b5036f).
 
-
 이 프로그램은 기본 프린터에서만 동작합니다. 당신의 [기본 프린터](https://support.microsoft.com/ko-kr/windows/windows-%EA%B8%B0%EB%B3%B8-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%84%A4%EC%A0%95-e10cf8b8-e596-b102-bf84-c41022b5036f)를 확인 및 변경해주십시오.
 
 #Lisense
