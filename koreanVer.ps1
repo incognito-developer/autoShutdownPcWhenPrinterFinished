@@ -25,14 +25,14 @@ while ($true) {
         $printer = Get-WmiObject -Class Win32_Printer | Where-Object {$_.Default -eq $true}
         $printerStatus = "NULL"
         switch($printer.PrinterStatus){
-            1 { $printerStatus = "기타"}
-            2 { $printerStatus = "알 수 없음"}
-            3 { $printerStatus = "유휴 상태"}
-            4 { $printerStatus = "인쇄"}
-            5 { $printerStatus = "준비"}
-            6 { $printerStatus = "인쇄 중지됨"}
-            7 { $printerStatus = "오프라인"}
-            default { $printerStatus = "알 수 없음"}
+            1 { $printerStatus = "1: 기타"}
+            2 { $printerStatus = "2: 알 수 없음"}
+            3 { $printerStatus = "3: 유휴 상태"}
+            4 { $printerStatus = "4: 인쇄"}
+            5 { $printerStatus = "5: 준비"}
+            6 { $printerStatus = "6: 인쇄 중지됨"}
+            7 { $printerStatus = "7: 오프라인"}
+            default { $printerStatus = $($printer.PrinterStatus)": https://learn.microsoft.com/ko-kr/windows/win32/cimwin32prov/win32-printer에서 확인되지 않은 응답코드."}
         }
         $text = "기본 프린터: $($printer.Name)`n상태: $printerStatus`n`n"
         
