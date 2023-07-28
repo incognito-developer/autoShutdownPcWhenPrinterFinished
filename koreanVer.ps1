@@ -46,7 +46,7 @@ while ($true) {
                 $text += "`t$($job.Document)`n"
             }
         }
-        if ($spooler.Count -eq 0) {
+        if ([int]$spooler.Count -eq 0) {
             $text += "남은 작업 개수: 0"
         } else {
             $text += "남은 작업 개수: $($spooler.Count -1)"
