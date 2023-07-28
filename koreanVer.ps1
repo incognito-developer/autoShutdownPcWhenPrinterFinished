@@ -33,6 +33,7 @@ while ($true) {
             6 { $printerStatus = "인쇄 중지됨"}
             7 { $printerStatus = "오프라인"}
             default { $printerStatus = "알 수 없음"}
+        }
         $text = "기본 프린터: $($printer.Name)`n상태: $printerStatus`n`n"
         
         $text += "인쇄 중인 파일:`n"
